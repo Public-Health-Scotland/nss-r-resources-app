@@ -35,7 +35,7 @@ ui <- navbarPage(
     useful both for the begginer and the advanced user. If you have any recommendation
     on links we could add, ", 
     tags$a(href="https://github.com/Health-SocialCare-Scotland/nss-r-resources-app/issues", 
-           "please let us know."))
+           "please let us know.")),
   h4("General"),
   tags$ul(
     #Link to PHI intro to R
@@ -154,7 +154,7 @@ ui <- navbarPage(
     useful both for the begginer and the advanced user. If you have any recommendation
              on links we could add, ", 
              tags$a(href="https://github.com/Health-SocialCare-Scotland/nss-r-resources-app/issues", 
-                    "please let us know."))
+                    "please let us know.")),
            tags$ul( 
              #Link to PHI intro to R
              tags$li(tags$a(href="https://github.com/Health-SocialCare-Scotland/R-Resources/blob/master/Intro%20to%20R-NSS.md", 
