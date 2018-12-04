@@ -211,6 +211,25 @@ ui <- navbarPage(
                             "Best practices for Shiny apps development"))
            )
   ), #Tab panel bracket
+  tabPanel(title = " Rmarkdown", 
+           h4("RMarkdown"),
+           tags$ul( 
+             #Official page of R Markdowne
+             tags$li(tags$a(href="https://rmarkdown.rstudio.com/", 
+                            "R Markdown."), 
+                     " - Official page of R Markdown."),
+             #TinyTeX Offline Install Guide
+             tags$li(tags$a(href="https://github.com/Health-SocialCare-Scotland/R-Resources/blob/master/TinyTeX%20Offline%20Install%20Guide.pdf", 
+                            "TinyTeX Offline Install Guide"), 
+                     " - Setup instructions for producing PDF documents with R Markdown."),
+             #R Markdown: The Definitive Guide
+             tags$li(tags$a(href="https://bookdown.org/yihui/rmarkdown/", 
+                            "R Markdown: The Definitive Guide"), " - book on R Markdown."),
+             #cheetsheet
+             tags$li(tags$a(href="https://www.rstudio.com/resources/cheatsheets/#rmarkdown", 
+                            "R Markdown cheatsheet"))
+           )
+  ), #Tab panel bracket
   tabPanel(title = " Version control", 
            h4("Version control"),
            tags$ul( 
