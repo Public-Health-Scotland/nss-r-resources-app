@@ -32,20 +32,29 @@ ui <- navbarPage(
       ),
   tabPanel(title = " General", 
            h4("General"),
-           p("This page intends to group together resources for analysts using R. We hope this is
-    useful both for the begginer and the advanced user. If you have any recommendation
-             on links we could add, ", 
+           p("This site groups together resources for analysts using R. We hope this is
+    useful both for the beginner and the advanced user. If you have any suggestions
+             of links we could add, ", 
              tags$a(href="https://github.com/Health-SocialCare-Scotland/nss-r-resources-app/issues", 
                     "please let us know.")),
            tags$ul( 
              #Link to PHI intro to R
              tags$li(tags$a(href="https://github.com/Health-SocialCare-Scotland/R-Resources/blob/master/Intro%20to%20R-NSS.md", 
                             "Intro to R in the NSS"), 
-                     " - An introductory guide to use R in the NSS."),
+                     " - An introductory guide to using R in NSS."),
              #Link to PHI style guide
              tags$li(tags$a(href="https://github.com/Health-SocialCare-Scotland/R-Resources/blob/master/PHI%20R%20style%20guide.md", 
                             "PHI R style guide"), 
-                     " - Style guide recommended to use when coding in R."),
+                     " - Style guide to follow when coding in R."),
+             #Link to cheatsheets
+             tags$li(tags$a(href="https://www.rstudio.com/resources/cheatsheets/", 
+                            "Cheatsheets"), " - Useful summaries of packages' commands."),
+             #blank project structures
+             tags$li(tags$a(href="https://github.com/Health-SocialCare-Scotland/r-project-structure", 
+                            "R project "), "and ", 
+                     tags$a(href="https://github.com/Health-SocialCare-Scotland/rshiny-project-structure", 
+                            "R Shiny project "),
+                     "- Blank project templates to help you organize and structure your R work."),
              #Link to R official page
              tags$li(tags$a(href="https://www.r-project.org/", "R official page")),
              #Link to RStudio official page
@@ -53,33 +62,48 @@ ui <- navbarPage(
              #Link to PHI style guide
              tags$li(tags$a(href="https://github.com/NHS-NSS-transforming-publications/resources/blob/master/R.md", 
                             "R resources"), 
-                     " - some extra resources compiled by the Transforming Publications team."),
-             #Link to cheatsheets
-             tags$li(tags$a(href="https://www.rstudio.com/resources/cheatsheets/", 
-                            "Cheatsheets"), " - useful summaries of packages' commands."),
-             #blank project structures
-             tags$li(tags$a(href="https://github.com/Health-SocialCare-Scotland/r-project-structure", 
-                            "R project "), "and ", 
-                     tags$a(href="https://github.com/Health-SocialCare-Scotland/rshiny-project-structure", 
-                            "R Shiny project "),
-                     "- blank project templates to help you organize your work.")
-           )
+                     " - Some extra resources compiled by the Transforming Publishing team.")
+           ),
+           h4("Training"),
+           p("Staff should complete the short, free Data Camp course",
+             tags$a(href="https://www.datacamp.com/courses/free-introduction-to-r", "Introduction to R"),
+             " before undertaking further R training.
+             If you would like to sign up for further training then please contact",
+             tags$a(href="mailto:nss.phistaffdevelopment@nhs.net", "PHI staff development.") 
+             )
   ), #Tab panel bracket
-  tabPanel(title = "Help", 
-           h4("Ask for help"),
+  tabPanel(title = "Help, support and meet-ups", 
+           h4("Meet-ups"),
            tags$ul( #need link to rgov slack?
              #Link to data science slack
              tags$li(tags$a(href="https://datasciencescotland.slack.com", 
                             "Data science Scotland slack"), 
                      " - Chat space about data science in the public sector of Scotland. 
-                     It hosts r and r shiny channels."),
+                     It hosts R and R Shiny channels."),
              #Code clubs - need to add a contact or something like that
-             tags$li("There are ", tags$b("code clubs"), " meetings every two weeks both in Meridian and the Gyle,
-                     where you can meet other R users and obtain help."),
+             tags$li("There are ", tags$b("code clubs"), " every two weeks both in Meridian and the Gyle,
+                     where you can meet other R users and obtain help. 
+                     Contact", tags$a(href="mailto:zsanett.bahor@nhs.net", "Zsanett Bahor"), 
+                     "for information on the Gyle code club and ",
+                     tags$a(href="mailto:megan.mcnicol@nhs.net", "Megan McNicol"),
+                     "or",
+                     tags$a(href="mailto:caroline.martin3@nhs.net", "Caroline Martin"),
+                     "for information on the Meridian code club."),
              #Link to use PHI user group
              tags$li(tags$a(href="mailto:Nss.rusergroup@nhs.net", 
                             "PHI R user group "), 
-                     " - distribution list of R users who might be able to help you."),
+                     " - Distribution list of R users who might be able to help you.
+                     Sign up to the mailing list to receive information about regular R user group meetings.
+                     The minutes, agendas and contents of the useR group meetings can be found on ",
+                     tags$a(href="https://github.com/Health-SocialCare-Scotland/PHI-useR-group", "GitHub.")
+             ),
+             #Link to EdinbR group
+             tags$li(tags$a(href="http://edinbr.org/", 
+                            "EdinbR"), 
+                     " - Monthly R meet-ups in Edinburgh.")
+           ),
+          h4("Online help"),
+        tags$ul(
              #Link to stackoverflow
              tags$li(tags$a(href="https://stackoverflow.com/questions/tagged/r", 
                             "Stackoverflow"), 
@@ -113,7 +137,8 @@ ui <- navbarPage(
              tags$li(tags$a(href="http://www.bagualu.net/wordpress/wp-content/uploads/2015/10/R_Cookbook.pdf", 
                             "R Cookbook"), " - reference book on R."),
              #Link to Advanced R
-             tags$li(tags$a(href="http://adv-r.had.co.nz/", "Advanced R")),
+             tags$li(tags$a(href="http://adv-r.had.co.nz/", "Advanced R"),
+                     " - by Hadley Wickham"),
              #Link to R packages
              tags$li(tags$a(href="http://r-pkgs.had.co.nz/", 
                             "R Packages"), " - book on R packages."),
@@ -124,7 +149,7 @@ ui <- navbarPage(
              #Link to Efficient R programming
              tags$li(tags$a(href="https://csgillespie.github.io/efficientR/", 
                             "Efficient R programming"), 
-                     " - on how to make code faster to type, to run and more scalable..")
+                     " - on how to make code faster to type, to run and more scalable.")
              ),
            h4("Learning"),
            tags$ul( 
@@ -141,7 +166,7 @@ ui <- navbarPage(
                             "Udacity")),
              #Link to coursera
              tags$li(tags$a(href="https://www.rstudio.com/online-learning/", 
-                            "RStudio compilation of resources."))
+                            "RStudio compilation of resources"))
            )
   ), #Tab panel bracket
   tabPanel(title = " Wrangling and analysis", 
@@ -216,7 +241,7 @@ ui <- navbarPage(
            tags$ul( 
              #Official page of R Markdowne
              tags$li(tags$a(href="https://rmarkdown.rstudio.com/", 
-                            "R Markdown."), 
+                            "R Markdown"), 
                      " - Official page of R Markdown."),
              #TinyTeX Offline Install Guide
              tags$li(tags$a(href="https://github.com/Health-SocialCare-Scotland/R-Resources/blob/master/TinyTeX%20Offline%20Install%20Guide.pdf", 
@@ -243,7 +268,7 @@ ui <- navbarPage(
                      " - book on how to use Git and GitHub with R.")
            )
   ), #Tab panel bracket
-  tabPanel(title = " Code", 
+  tabPanel(title = " Example code", 
            h4("Code examples"),
            tags$ul( #this section could be a lot more detailed
              #Link to PHI github
