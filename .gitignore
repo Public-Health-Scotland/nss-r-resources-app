@@ -2,7 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-*.Rproj
 testing.R
 
 # packrat library folder (automatically added due to packract being initialised)
