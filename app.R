@@ -65,12 +65,9 @@ ui <- navbarPage(
                      " - Some extra resources compiled by the Transforming Publishing team.")
            ),
            h4("Training"),
-           p("Staff should complete the short, free Data Camp course",
-             tags$a(href="https://www.datacamp.com/courses/free-introduction-to-r", "Introduction to R"),
-             " before undertaking further R training.
-             If you would like to sign up for further training then please contact",
-             tags$a(href="mailto:nss.phistaffdevelopment@nhs.net", "PHI staff development.") 
-             )
+           p("If you would like to sign up for R training then please contact",
+             tags$a(href="mailto:nss.phistaffdevelopment@nhs.net", "PHI staff development."), 
+             "Also check the 'Help, support and meet-ups' section.")
   ), #Tab panel bracket
   tabPanel(title = "Help, support and meet-ups", 
            h4("Meet-ups"),
@@ -83,7 +80,7 @@ ui <- navbarPage(
              #Code clubs - need to add a contact or something like that
              tags$li("There are ", tags$b("code clubs"), " every two weeks both in Meridian and the Gyle,
                      where you can meet other R users and obtain help. 
-                     Contact", tags$a(href="mailto:zsanett.bahor@nhs.net", "Zsanett Bahor"), 
+                     Contact", tags$a(href="mailto:diana.marosi@nhs.net", "Diana Marosi"), 
                      "for information on the Gyle code club and ",
                      tags$a(href="mailto:megan.mcnicol@nhs.net", "Megan McNicol"),
                      "or",
@@ -153,8 +150,10 @@ ui <- navbarPage(
              ),
            h4("Learning"),
            tags$ul( 
-             #Link to datacamp
-             tags$li(tags$a(href="https://www.datacamp.com/", "Data camp")),
+             #Link to Swirl
+             tags$li(tags$a(href="https://swirlstats.com/", "Swirl")),
+             #Link to RStudio primers
+             tags$li(tags$a(href="https://rstudio.cloud/learn/primers", "RStudio")),
              #Link to coursera
              tags$li(tags$a(href="https://www.coursera.org/learn/r-programming", 
                             "Coursera")),
