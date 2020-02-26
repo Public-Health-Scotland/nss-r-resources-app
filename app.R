@@ -46,6 +46,10 @@ ui <- navbarPage(
              tags$li(tags$a(href="https://github.com/Health-SocialCare-Scotland/R-Resources/blob/master/PHI%20R%20style%20guide.md", 
                             "PHI R style guide"), 
                      " - Style guide to follow when coding in R."),
+             #Link to phsmethods package
+             tags$li(tags$a(href="https://github.com/Health-SocialCare-Scotland/phsmethods",
+                            "phsmethods R package"),
+                     " - Package for use by analysts in Public Health Scotland."),
              #Link to SPSS to R
              tags$li(tags$a(href="https://www.isdscotland.org/About-ISD/Methodologies/_docs/SPSS-syntax-to-R_v1-1.pdf", 
                             "SPSS syntax to R code guide"), 
