@@ -178,10 +178,7 @@ ui <- navbarPage(
                             "Neonscience")),
              #Link to coursera
              tags$li(tags$a(href="https://www.udacity.com/course/data-analysis-with-r--ud651", 
-                            "Udacity")),
-             #Link to coursera
-             tags$li(tags$a(href="https://www.rstudio.com/online-learning/", 
-                            "RStudio compilation of resources"))
+                            "Udacity"))
            )
   ), #Tab panel bracket
   tabPanel(title = " Wrangling and analysis", 
