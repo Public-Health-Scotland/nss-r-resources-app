@@ -184,9 +184,9 @@ ui <- navbarPage(
   tabPanel(title = " Wrangling and analysis", 
            h4("Data wrangling and analysis"),
            tags$ul( 
-             #Link to accesing web APIs from R
+             #Link to accessing web APIs from R
              tags$li(tags$a(href="https://github.com/jsphdms/R_web_APIs", 
-                            "Accesing web APIs from R"), 
+                            "Accessing web APIs from R"), 
                      " - guide on how to extract data using APIs using R."),
              #Link to use SMRA with R
              tags$li(tags$a(href="https://github.com/Health-SocialCare-Scotland/R-Resources/blob/master/using%20SMRA%20with%20R.md", 
