@@ -248,10 +248,10 @@ ui <- navbarPage(
                             "Best practices for Shiny apps development"))
            )
   ), #Tab panel bracket
-  tabPanel(title = " RMarkdown", 
-           h4("RMarkdown"),
+  tabPanel(title = " R Markdown", 
+           h4("R Markdown"),
            tags$ul( 
-             #Official page of R Markdowne
+             #Official page of R Markdown
              tags$li(tags$a(href="https://rmarkdown.rstudio.com/", 
                             "R Markdown"), 
                      " - Official page of R Markdown."),
@@ -270,10 +270,14 @@ ui <- navbarPage(
   tabPanel(title = " Version control", 
            h4("Version control"),
            tags$ul( 
+             #Link to git guide
+             tags$li(tags$a(href="https://nhs-nss-transforming-publications.github.io/git-guide/",
+                            "Git guide"),
+                     " - interactive guide to using git and GitHub with R"),
              #Link to tpp github guidance
              tags$li(tags$a(href="https://github.com/NHS-NSS-transforming-publications/GitHub-guidance", 
                             "GitHub guidance"), 
-                     " - developed by the transforming publication team."),
+                     " - best practices when using GitHub and a list of useful Git Bash commands."),
              #Link to happygitwithr
              tags$li(tags$a(href="http://happygitwithr.com/", 
                             "Happy Git and GitHub for the useR"), 
