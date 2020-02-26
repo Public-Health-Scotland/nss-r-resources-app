@@ -94,6 +94,10 @@ ui <- navbarPage(
                      "or",
                      tags$a(href="mailto:caroline.martin3@nhs.net", "Caroline Martin"),
                      "for information on the Meridian code club."),
+             #'Communicating analysis in R' user group
+             tags$li(tags$a(href=" https://docs.google.com/forms/d/1bReJpvTL0UKbXklnQUavUxDcfcDqW47151z4qvfBXuQ/edit#responses", 
+                            "Meetings of the public sector user group 'Communicating analysis in R' "), 
+                     " - If you are interested in attending you can register for the next one in the link."),
              #Link to use PHI user group
              tags$li(tags$a(href="mailto:Nss.rusergroup@nhs.net", 
                             "PHI R user group "), 
@@ -230,10 +234,10 @@ ui <- navbarPage(
   tabPanel(title = " Shiny", 
            h4("Shiny"),
            tags$ul( 
-             #Shiny user group
+             #'Communicating analysis in R' user group
              tags$li(tags$a(href=" https://docs.google.com/forms/d/1bReJpvTL0UKbXklnQUavUxDcfcDqW47151z4qvfBXuQ/edit#responses", 
-                            "Public sector Shiny user group meetings"), 
-                     " - If you are interesting in attending you can register for the next one in the link."),
+                            "Meetings of the public sector user group 'Communicating analysis in R' "), 
+                     " - If you are interested in attending you can register for the next one in the link."),
              #Link to R Shiny Tutorial
              tags$li(tags$a(href="http://shiny.rstudio.com/tutorial/", 
                             "Shiny Tutorial")),
