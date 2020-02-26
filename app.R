@@ -46,6 +46,10 @@ ui <- navbarPage(
              tags$li(tags$a(href="https://github.com/Health-SocialCare-Scotland/R-Resources/blob/master/PHI%20R%20style%20guide.md", 
                             "PHI R style guide"), 
                      " - Style guide to follow when coding in R."),
+             #Link to phsmethods package
+             tags$li(tags$a(href="https://github.com/Health-SocialCare-Scotland/phsmethods",
+                            "phsmethods R package"),
+                     " - Package for use by analysts in Public Health Scotland."),
              #Link to SPSS to R
              tags$li(tags$a(href="https://www.isdscotland.org/About-ISD/Methodologies/_docs/SPSS-syntax-to-R_v1-1.pdf", 
                             "SPSS syntax to R code guide"), 
@@ -90,6 +94,10 @@ ui <- navbarPage(
                      "or",
                      tags$a(href="mailto:caroline.martin3@nhs.net", "Caroline Martin"),
                      "for information on the Meridian code club."),
+             #'Communicating analysis in R' user group
+             tags$li(tags$a(href=" https://docs.google.com/forms/d/1bReJpvTL0UKbXklnQUavUxDcfcDqW47151z4qvfBXuQ/edit#responses", 
+                            "Meetings of the public sector user group 'Communicating analysis in R' "), 
+                     " - If you are interested in attending you can register for the next one in the link."),
              #Link to use PHI user group
              tags$li(tags$a(href="mailto:Nss.rusergroup@nhs.net", 
                             "PHI R user group "), 
@@ -124,7 +132,15 @@ ui <- navbarPage(
              #Link to R-bloggers
              tags$li(tags$a(href="https://www.r-bloggers.com", 
                             "R-Bloggers"), 
-                     " - Blog compilation on R.")
+                     " - Blog compilation on R."),
+             #Link to RWeekly.org
+             tags$li(tags$a(href="https://rweekly.org/",
+                            "RWeekly.org"),
+                     " - Weekly R newsletter."),
+             #Link to #twofunctionsmostdays
+             tags$li(tags$a(href="https://github.com/sharlagelfand/twofunctionsmostdays",
+                            "#twofunctionsmostdays"),
+                     " - Sharing two useful R functions, most days.")
              ),
            h4("Books"),
            tags$ul( 
@@ -166,18 +182,15 @@ ui <- navbarPage(
                             "Neonscience")),
              #Link to coursera
              tags$li(tags$a(href="https://www.udacity.com/course/data-analysis-with-r--ud651", 
-                            "Udacity")),
-             #Link to coursera
-             tags$li(tags$a(href="https://www.rstudio.com/online-learning/", 
-                            "RStudio compilation of resources"))
+                            "Udacity"))
            )
   ), #Tab panel bracket
   tabPanel(title = " Wrangling and analysis", 
            h4("Data wrangling and analysis"),
            tags$ul( 
-             #Link to accesing web APIs from R
+             #Link to accessing web APIs from R
              tags$li(tags$a(href="https://github.com/jsphdms/R_web_APIs", 
-                            "Accesing web APIs from R"), 
+                            "Accessing web APIs from R"), 
                      " - guide on how to extract data using APIs using R."),
              #Link to use SMRA with R
              tags$li(tags$a(href="https://github.com/Health-SocialCare-Scotland/R-Resources/blob/master/using%20SMRA%20with%20R.md", 
@@ -221,10 +234,10 @@ ui <- navbarPage(
   tabPanel(title = " Shiny", 
            h4("Shiny"),
            tags$ul( 
-             #Shiny user group
+             #'Communicating analysis in R' user group
              tags$li(tags$a(href=" https://docs.google.com/forms/d/1bReJpvTL0UKbXklnQUavUxDcfcDqW47151z4qvfBXuQ/edit#responses", 
-                            "Public sector Shiny user group meetings"), 
-                     " - If you are interesting in attending you can register for the next one in the link."),
+                            "Meetings of the public sector user group 'Communicating analysis in R' "), 
+                     " - If you are interested in attending you can register for the next one in the link."),
              #Link to R Shiny Tutorial
              tags$li(tags$a(href="http://shiny.rstudio.com/tutorial/", 
                             "Shiny Tutorial")),
@@ -239,10 +252,10 @@ ui <- navbarPage(
                             "Best practices for Shiny apps development"))
            )
   ), #Tab panel bracket
-  tabPanel(title = " Rmarkdown", 
-           h4("RMarkdown"),
+  tabPanel(title = " R Markdown", 
+           h4("R Markdown"),
            tags$ul( 
-             #Official page of R Markdowne
+             #Official page of R Markdown
              tags$li(tags$a(href="https://rmarkdown.rstudio.com/", 
                             "R Markdown"), 
                      " - Official page of R Markdown."),
@@ -261,10 +274,14 @@ ui <- navbarPage(
   tabPanel(title = " Version control", 
            h4("Version control"),
            tags$ul( 
+             #Link to git guide
+             tags$li(tags$a(href="https://nhs-nss-transforming-publications.github.io/git-guide/",
+                            "Git guide"),
+                     " - interactive guide to using git and GitHub with R"),
              #Link to tpp github guidance
              tags$li(tags$a(href="https://github.com/NHS-NSS-transforming-publications/GitHub-guidance", 
                             "GitHub guidance"), 
-                     " - developed by the transforming publication team."),
+                     " - best practices when using GitHub and a list of useful Git Bash commands."),
              #Link to happygitwithr
              tags$li(tags$a(href="http://happygitwithr.com/", 
                             "Happy Git and GitHub for the useR"), 
