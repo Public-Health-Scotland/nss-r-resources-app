@@ -128,7 +128,15 @@ ui <- navbarPage(
              #Link to R-bloggers
              tags$li(tags$a(href="https://www.r-bloggers.com", 
                             "R-Bloggers"), 
-                     " - Blog compilation on R.")
+                     " - Blog compilation on R."),
+             #Link to RWeekly.org
+             tags$li(tags$a(href="https://rweekly.org/",
+                            "RWeekly.org"),
+                     " - Weekly R newsletter."),
+             #Link to #twofunctionsmostdays
+             tags$li(tags$a(href="https://github.com/sharlagelfand/twofunctionsmostdays",
+                            "#twofunctionsmostdays"),
+                     " - Sharing two useful R functions, most days.")
              ),
            h4("Books"),
            tags$ul( 
@@ -243,7 +251,7 @@ ui <- navbarPage(
                             "Best practices for Shiny apps development"))
            )
   ), #Tab panel bracket
-  tabPanel(title = " Rmarkdown", 
+  tabPanel(title = " RMarkdown", 
            h4("RMarkdown"),
            tags$ul( 
              #Official page of R Markdowne
